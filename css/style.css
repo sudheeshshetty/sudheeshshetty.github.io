@@ -1,6 +1,6 @@
 .navbar-custom {
     color: #FFFFFF;
-    background-color: #722872;
+    background-color: white;/*#722872;*/
 }
 
 .navbar{
@@ -14,7 +14,7 @@
     color: black;
 }
 body{
-    background-color: #7a797a;
+    background-color: white;/*#7a797a;*/
 }
 .data{
     background-color: #d5d4d6;
@@ -51,6 +51,10 @@ body{
 }
 .projects{
     background:#eee;
+    
+}
+.card-deck-wrapper{
+    padding:60px;
 }
 .text{
     max-width: 70%;
@@ -81,4 +85,7 @@ hr{
 }
 .shadow{
     box-shadow: 0 4px 4px 0 #282828;
+}
+.about{
+    background-color: #d5d4d6;
 }
