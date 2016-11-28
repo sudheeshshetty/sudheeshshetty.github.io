@@ -20,7 +20,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <div class="navbar navbar-custom">
+        <div class="navbar navbar-custom navbar-fixed-top">
             <div class= "container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -34,7 +34,7 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#home">Home</a></li>
-                        <li><a href="#blog">Blog</a></li>
+<!--                        <li><a href="#blog">Blog</a></li>-->
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="container data">
-            <div class="home text-center" id="home">
+            <div class="container home text-center" id="home">
                 <div class="text pull-left">
                     <p class="intro-text" >Full-stack Developer(MEAN Stack), script writer (Perl, Shell, python) and an open source enthusiast. I have a great love towards technologies. I love to learn technologies and to teach them.
                     </p>
@@ -53,14 +53,27 @@
                     </p>
                 </div>
                 <div class="image pull-right">
-                <img id="intro-image" src="images/sudhi.JPG" alt="sudheesh" title="sudheesh"/>
+                    <img id="intro-image" src="images/sudhi.JPG" alt="sudheesh" title="sudheesh"/>
                 </div>
                 <div class="blog" id="blog">
-                    
+
                 </div>
             </div>
-        <div class="Blog" id="Blog">
-        </div>
+            <div class="container projects" id="Projects">
+                <div class="project shadow">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">TEEN Protocol</h4>
+                            <h6 class="card-subtitle text-muted">For ADHOC Networks</h6>
+                        </div>
+                        <img class="project-image" src="/images/teen.png" alt="Card image">
+                        <div class="card-block">
+                            <p class="card-text">TEEN is a routing protocol for finding path from source to destination. It uses tree structure to find the destination node. The protocol has been integrated in ns2</p>
+                            <a href="https://github.com/sudheeshshetty/teen-protocol-for-ns2" class="card-link">Check code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

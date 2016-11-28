@@ -19,6 +19,7 @@ body{
 .data{
     background-color: #d5d4d6;
     box-shadow: 0 10px 20px 10px #282828;
+    padding:0;
 }
 .home{
     height: 400px;
@@ -50,4 +51,23 @@ body{
 .text{
     max-width: 70%;
     height: inherit;
+}
+.projects{
+    background:#eee;
+}
+.project{
+    max-height: 500px;
+    max-width: 30%;
+    min-height: 500px;
+    min-width: 30%;
+}
+
+.project-image{
+    max-height: 300px;
+    max-width: 100%;
+    min-height: 300px;
+    min-width: 100%;
+}
+.shadow{
+    box-shadow: 10px 10x 20px 10px #282828;
 }
