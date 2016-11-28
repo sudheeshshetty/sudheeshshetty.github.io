@@ -47,27 +47,38 @@ body{
     font-size: 1.5em;
     color: #722872;
     font-weight: bold;
+    text-align: center;
+}
+.projects{
+    background:#eee;
 }
 .text{
     max-width: 70%;
     height: inherit;
 }
-.projects{
-    background:#eee;
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border: 1px solid #722872;
 }
-.project{
-    max-height: 500px;
-    max-width: 30%;
-    min-height: 500px;
-    min-width: 30%;
+.card-title{
+    color: #722872;
 }
-
+.card-subtitle{
+    color: #722872;
+}
 .project-image{
     max-height: 300px;
     max-width: 100%;
     min-height: 300px;
     min-width: 100%;
+    box-shadow: 0 0 5px 0 #282828;
 }
 .shadow{
-    box-shadow: 10px 10x 20px 10px #282828;
+    box-shadow: 0 4px 4px 0 #282828;
 }
