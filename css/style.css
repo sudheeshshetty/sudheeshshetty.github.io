@@ -24,13 +24,16 @@ body{
 .home{
     height: 400px;
 }
-#intro-image{
+.intro-image{
     margin-top: 20%;
     max-height: 300px;
     max-width: 300px;
     min-height: 300px;
     min-width:300px;
     border-radius: 100%;
+}
+.intro-image:hover{
+    box-shadow: 0 0 25px 0 #282828;
 }
 .image{
     height: inherit;
@@ -75,6 +78,7 @@ hr{
 }
 .card-subtitle{
     color: #722872;
+    text-align: center;
 }
 .project-image{
     max-height: 300px;
@@ -82,10 +86,42 @@ hr{
     min-height: 300px;
     min-width: 100%;
     box-shadow: 0 0 5px 0 #282828;
+    border-radius: 5px 5px 0 0;
+}
+.project-image:hover{
+    opacity: 0.6; 
+    filter: alpha(opacity=60);
 }
 .shadow{
     box-shadow: 0 4px 4px 0 #282828;
 }
+.shadow:hover {
+    box-shadow: 0 8px 25px 0 #282828;
+}
+.link{
+    text-align: center;
+}
+.link:hover{
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+}
 .about{
-    background-color: #d5d4d6;
+    background-color: #f2f3f7;
+}
+.about-text{
+    color: #722872;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 50px;
+/*    letter-spacing: 2px;*/
+    line-height: 1.8;
+    word-spacing: 5px;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+.jumbotron{
+    box-shadow: 0 4px 4px 0 #282828;
+}
+.jumbotron:hover{
+    box-shadow: 0 8px 25px 0 #282828;
 }
