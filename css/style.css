@@ -16,33 +16,43 @@
 body{
     background-color: white;/*#7a797a;*/
 }
+
 .data{
     background-color: #d5d4d6;
     box-shadow: 0 10px 20px 10px #282828;
-    padding:0;
+    padding: 0;
+    padding-top: 60px;
+    
 }
-.home{
-    height: 400px;
+
+.intro{
+    max-height: 300px;
+    min-height: 300px;
+    padding-top:40px;    
 }
 .intro-image{
-    margin-top: 20%;
-    max-height: 300px;
-    max-width: 300px;
-    min-height: 300px;
-    min-width:300px;
+    max-height: 250px;
+    max-width: 250px;
+    min-height: 250px;
+    min-width:250px;
     border-radius: 100%;
-}
-.intro-image:hover{
     box-shadow: 0 0 25px 0 #282828;
 }
+
 .image{
-    height: inherit;
-    max-width: 30%;
+    max-height: 300px;
+    min-height: 300px;
+    padding-top:30px;
+}
+
+@media (max-width: 979px) {
+    .image{
+        padding-top: 0;
+    }
 }
 .intro-text{
     padding:2%;
     font-size:1.15em;
-    margin-top: 20%;
     color: #722872;
     font-weight: bold;
 }
@@ -86,7 +96,7 @@ hr{
     min-height: 300px;
     min-width: 100%;
     box-shadow: 0 0 5px 0 #282828;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;    
 }
 .project-image:hover{
     opacity: 0.6; 
@@ -124,4 +134,49 @@ hr{
 }
 .jumbotron:hover{
     box-shadow: 0 8px 25px 0 #282828;
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper{
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 300px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    border-radius: 5px;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    border-radius: 5px;
+    background-color: white;
 }
