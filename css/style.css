@@ -209,12 +209,16 @@ hr{
     content: counter(li-counter);
     counter-increment: li-counter;
 }
-
+@media (max-width: 380px) {
+    .flip-container, .front, .back {
+        width: 100%;
+    }
+}
 
 /* List style */
 
 .list-type5{
-    width:410px;
+    width:100%;
     margin:0 auto;
 }
 .list-type5 ol {
