@@ -1,6 +1,6 @@
 .navbar-custom {
     color: #FFFFFF;
-    background-color: white;/*#722872;*/
+    background-color: #722872;
 }
 
 .navbar{
@@ -38,8 +38,13 @@ body{
     border-radius: 100%;
     box-shadow: 0 0 25px 0 #282828;
 }
-
+.intro-image:hover{
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+}
 .image{
+    overflow: hidden;
+    position: relative;    
     max-height: 300px;
     min-height: 300px;
     padding-top:30px;
@@ -140,6 +145,9 @@ hr{
 /* entire container, keeps perspective */
 .flip-container {
     perspective: 1000px;
+    text-align: center;
+    margin:auto;
+    position:relative;
 }
 /* flip the pane when hovered */
 .flip-container:hover .flipper{
@@ -179,4 +187,73 @@ hr{
     transform: rotateY(180deg);
     border-radius: 5px;
     background-color: white;
+}
+
+.flip-container:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #6CD6CC;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+
+/* List style */
+
+.list-type5{
+    width:410px;
+    margin:0 auto;
+}
+.list-type5 ol {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+    counter-reset: li-counter;
+}
+.list-type5 ol li{
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    background-color: #F0D756;
+    padding-left: 58px;
+    border-radius: 50px;
+    color:black;
+    font-size:15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.list-type5 ol li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #6CD6CC;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+    content: counter(li-counter);
+    counter-increment: li-counter;
 }
