@@ -5,23 +5,38 @@
 
 .navbar{
     border-radius: 0px;
-    color: black;
     margin-bottom: 0px;
-    box-shadow: 0 10px 15px 0 #454647;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    box-shadow: 0 5px 7.5px 0 #454647;
+/*    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;*/
 }
+.navbar-brand{
+    font-size: 25px;
+    color: white;
+}
+.navbar-brand:hover{
+    color:black;
+}
+
 .nav.navbar-nav.navbar-right li a {
     color: black;
 }
+.active{ 
+    color: black; 
+    background-color: white;
+}
+.nav.navbar-nav.navbar-right li a:hover, .nav.navbar-nav.navbar-right li a:focus{
+    color:black;
+}
+
 body{
     background-color: white;/*#7a797a;*/
 }
 
 .data{
-    background-color: #d5d4d6;
-    box-shadow: 0 10px 20px 10px #282828;
+    background-color: #f2f2f2; /*#d5d4d6;*/
+    box-shadow: 0 2px 4px 2px #282828;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 100px;
     
 }
 
@@ -43,8 +58,10 @@ body{
     opacity: 1;
 }
 .image{
+/*
     overflow: hidden;
     position: relative;    
+*/
     max-height: 300px;
     min-height: 300px;
     padding-top:30px;
@@ -68,7 +85,7 @@ body{
     text-align: center;
 }
 .projects{
-    background:#eee;
+    background:white;
     
 }
 .card-deck-wrapper{
@@ -119,9 +136,6 @@ hr{
 .link:hover{
     text-decoration: none;
     text-shadow: 2px 2px 4px #000000;
-}
-.about{
-    background-color: #f2f3f7;
 }
 .about-text{
     color: #722872;
@@ -208,6 +222,7 @@ hr{
     overflow: hidden;
     content: counter(li-counter);
     counter-increment: li-counter;
+    box-shadow: 0 2px 4px 2px #282828;
 }
 @media (max-width: 380px) {
     .flip-container, .front, .back {
@@ -239,6 +254,7 @@ hr{
     color:black;
     font-size:15px;
     font-family: 'Raleway', sans-serif;
+    box-shadow: 0 2px 4px 2px #282828;
 }
 
 .list-type5 ol li:before {
@@ -260,4 +276,60 @@ hr{
     overflow: hidden;
     content: counter(li-counter);
     counter-increment: li-counter;
+    box-shadow: 0 2px 4px 2px #282828;
+}
+
+.contact{
+    background-color: white;/*#722872;*/
+/*    box-shadow: 0 -1px 4px 2px #282828;*/
+}
+.contact a{
+    padding: 5px;
+}
+.contact h2,.contact h6{
+    color: #722872;
+}
+.footer{
+    background-color: #722872;
+    padding: 10px;
+    color: white;
+}
+.footer a{
+    text-align: center; 
+    color: white;
+}
+
+@media (max-width: 979px) {
+    .footer p{
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.fa-envelope{
+    color: #ea4335;
+}
+.fa-github{
+    color:black;
+}
+.fa-gitlab{
+    color:#fc6d26;
+}
+.fa-facebook-square{
+    color: #3b5998;
+}
+.fa-twitter{
+    color: #1da1f2;
+}
+.fa-medium{
+    color:#02b875;
+}
+.fa-linkedin-square{
+    color:#0077b5;
+}
+.fa-wordpress{
+    color: #464646;
+}
+.fa-stack-overflow{
+    color: #fe7a15;
 }
