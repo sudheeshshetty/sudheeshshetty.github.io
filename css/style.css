@@ -148,20 +148,26 @@ hr{
     font-family: "Times New Roman";
     font-size: 20px;
 }
-@media (max-width: 979px) {
-    .about-text{
-        font-family: "Times New Roman";
-        font-size: 20px;
-        color: #722872;
-        padding: 10px;
-    }
-}
+
 .panel{
     border-radius: 10px;
 }
 .panel:hover{
     color:white;
     background-color: #722872;
+}
+@media (max-width: 979px) {
+    .about-text{
+        font-family: "Times New Roman";
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        background-color: #722872;
+    }
+    .panel:hover{
+        color: #722872;
+        background-color: white;
+    }
 }
 
 
