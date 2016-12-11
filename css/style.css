@@ -263,13 +263,13 @@ hr{
     position: relative;
     margin-bottom: 1.5em;
     padding: 0.5em;
-    background-color: #F0D756;
+    background-color: white;/*#F0D756;*/
     padding-left: 58px;
     border-radius: 50px;
     color:black;
     font-size:15px;
     font-family: 'Raleway', sans-serif;
-    box-shadow: 0 2px 4px 2px #282828;
+    box-shadow: 0 2px 4px 2px #722872;
 }
 
 .list-type5 ol li:before {
