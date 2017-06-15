@@ -26,10 +26,6 @@ img {
 }
 
 .modal{
-    background-image: url('../img/about.JPG');
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    background-size: cover;
     width: 75% !important ; 
     height: 100% !important ;
 }
