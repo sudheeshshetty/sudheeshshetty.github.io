@@ -166,6 +166,9 @@ nav ul li a{
 .fa-gitlab{
     background:#fc6d26 !important;
 }
+.fa-instagram{
+    background:#fb3958 !important;
+}
 ul li a i:hover {
     opacity: .7;
 }
